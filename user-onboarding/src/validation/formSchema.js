@@ -14,5 +14,8 @@ export default yup.object().shape({
     .required('Password is required'),
     tos: yup
     .boolean()
-    .oneOf([true], 'You must accept our terms of service')
+    .oneOf([true], 'You must accept our terms of service'),
+    role: yup
+    .string()
+    .required('Role is required')
 })

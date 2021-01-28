@@ -10,6 +10,7 @@ const initialFormValues = {
   email: '',
   password: '',
   tos: false,
+  role: '',
 }
 
 const initialErrorValues = {
@@ -17,6 +18,7 @@ const initialErrorValues = {
   email: '',
   password: '',
   tos: '',
+  role: '',
 }
 
 const initialDisabled = true;
@@ -47,6 +49,7 @@ function App() {
       email: formValues.email,
       password: formValues.password,
       tos: formValues.tos,
+      role: formValues.role,
     }
 
     postData(newUser)
